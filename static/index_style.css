@@ -16,6 +16,9 @@
 
 /* News api and google trends data notes styling */
 #newsAndGoogle_note{
-    font-size: 14px;
+    font-size: 12px;
+    float: right;
+    padding-bottom: 20px;
+    padding-right: 60px;
 
 }

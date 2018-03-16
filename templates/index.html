@@ -11,70 +11,70 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='index_style.css')}}"> 
   </head>
   <body>
-    <div id="Header" class="row">
-        <div class = "col-xs-4 col-md-4 col-md-offset-0"> <!-- padding--> 
-            <img id="flag1" src="static/900px-Olympic_flag.svg.png" alt="Olympic_flag">
-        </div>
-        <div  id="title" class = "col-xs-4 col-md-4 col-md-offset-0">
-            <h1> The Olympics Dashboard </h1> <!-- working title... -->
-            <p> By Safaa Amer, Maya Dennis, Christa Fields, and Kevin Yao</p>
-            <hr>
-        </div>
-        <div class = "col-xs-4 col-md-4 col-md-offset-0"> <!-- padding--> 
-            <img id="flag2" src="static/900px-Olympic_flag.svg.png" alt="Olympic_flag">
-        </div>
-    </div>
-    
-    <div id="Project Description" class="row"> 
-        <div class = "col-xs-12 col-md-12 col-md-offset-0">
-            <!-- Project description here! -->
-        </div>
-    </div>
-
-    <div id="dataRow1" class="row"> 
-        <div id="OlympicMedalStats" class = "col-xs-4 col-md-4 col-md-offset-0">
-            <!-- olympic medal stats table here -->
-        </div>
-
-        <div id="worldMap" class = "col-xs-8 col-md-8 col-md-offset-0">
-            <!-- world map data here --> 
-        </div>
-
-
-    </div>
-
-    <div id="dataRow2" class="row"> 
-        <div id="viewersChart" class = "col-xs-6 col-md-6 col-md-offset-0">
-            <!-- Viewers chart here -->
-        </div>
-
-        <div class= "col-xs-6 col-md-6 col-md-offset-0">
-            <!-- news_api chart section-->
-            <!-- dropdown menu for NY times, the guardian, or google trends data -->
-            <select id="newsAndGoogle_menu" onchange="ChangeNewsAndGoogle_menu(this)">
-                <option value="New York Times">New York Times</option>
-                <option value="The Guardian">The Guardian</option>
-                <option value="Google Trends">Google Trends</option>
-            </select>
-            <div id="news_api">
-            <!-- chart location -->
+    <div class="container-fluid">
+        <div id="Header" class="row">
+            <div class = "col-xs-4 col-md-4 col-md-offset-0"> <!-- padding--> 
+                <img id="flag1" src="static/900px-Olympic_flag.svg.png" alt="Olympic_flag">
             </div>
-            <!-- newsAndGoogle section note -->
+            <div  id="title" class = "col-xs-4 col-md-4 col-md-offset-0">
+                {% autoescape false %} <!-- @TOFIX: h1 not rendering correctly -->
+                    <h1> The Olympics Dashboards </h1> <!-- working title... -->
+                {% endautoescape %}
+                <p> By Safaa Amer, Maya Dennis, Christa Fields, and Kevin Yao</p>
+                <hr>
+            </div>
+            <div class = "col-xs-4 col-md-4 col-md-offset-0"> <!-- padding--> 
+                <img id="flag2" src="static/900px-Olympic_flag.svg.png" alt="Olympic_flag">
+            </div>
+        </div> <!-- end row -->
+        
+        <div id="Project Description" class="row"> 
+            <div class = "col-xs-12 col-md-12 col-md-offset-0">
+                <!-- Project description here! -->
+            </div>
+        </div> <!-- end row -->
+
+        <div id="dataRow1" class="row"> 
+            <div id="OlympicMedalStats" class = "col-xs-4 col-md-4 col-md-offset-0">
+                <!-- olympic medal stats table here -->
+            </div>
+
+            <div id="worldMap" class = "col-xs-8 col-md-8 col-md-offset-0">
+                <!-- world map data here --> 
+            </div>
+
+        </div> <!-- end row -->
+
+        <div id="dataRow2" class="row"> 
+            <div id="viewersChart" class = "col-xs-6 col-md-6 col-md-offset-0">
+                <!-- Viewers chart here -->
+            </div>
+
             <div class= "col-xs-6 col-md-6 col-md-offset-0">
-                <p id="newsAndGoogle_note"> 
-                    Before 1992:<br>Red bars = Olympic year<br>Gray bars otherwise
-                </p>
+                <!-- news_api chart section-->
+                <!-- dropdown menu for NY times, the guardian, or google trends data -->
+                <select id="newsAndGoogle_menu" onchange="ChangeNewsAndGoogle_menu(this)">
+                    <option value="New York Times">New York Times</option>
+                    <option value="The Guardian">The Guardian</option>
+                    <option value="Google Trends">Google Trends</option>
+                </select>
+                <div id="news_api">
+                <!-- chart location -->
+                </div>
+                <!-- newsAndGoogle section note -->
+                <div>
+                    <p id="newsAndGoogle_note"> 
+                        <strong>Before 1992:</strong><br>Red bars = Olympic year<br>Gray bars otherwise
+                        <br><br>
+                        <strong>After 1992:</strong><br>Yellow bars = Summer Olympic year<br>Blue bars = Winter Olympic year
+                        <br>Gray bars otherwise
+                    </p>
+                </div>
+                
             </div>
-            <div class= "col-xs-6 col-md-6 col-md-offset-0">
-                <p id="newsAndGoogle_note">
-                    After 1992:<br>Yellow bars = Summer Olympic year<br>Blue bars = Winter Olympic year
-                    <br>Gray bars otherwise
-                </p>
-            </div>
-            <hr>
-        </div>
-    </div>
-
+        </div> <!-- end row -->
+        <hr>
+    </div> <!-- ends container -->
     
   
     <!-- external scripts -->
