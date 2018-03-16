@@ -13,3 +13,12 @@
     max-width: 200px;
     margin-right: 100px;
 }
+
+/* News api and google trends data notes styling */
+#newsAndGoogle_note{
+    font-size: 12px;
+    float: right;
+    padding-bottom: 20px;
+    padding-right: 60px;
+
+}
