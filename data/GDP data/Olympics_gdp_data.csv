@@ -1,0 +1,114 @@
+,Rank,NOC,Gold,Silver,Bronze,Total,Year,Season,Country,GDP
+0,1,Russia (RUS),11,8,4,23,1994,Winter,Russia,2004.0
+1,2,Norway (NOR)*,10,11,5,26,1994,Winter,Norway,29228.0
+2,3,Germany (GER),9,7,8,24,1994,Winter,Germany,27247.0
+3,4,Italy (ITA),7,5,8,20,1994,Winter,Italy,19186.0
+4,5,United States (USA),6,5,2,13,1994,Winter,United States,27756.0
+5,7,Canada (CAN),3,6,4,13,1994,Winter,Canada,19963.0
+6,8,Switzerland (SUI),3,4,2,9,1994,Winter,Switzerland,42003.0
+7,9,Austria (AUT),2,3,4,9,1994,Winter,Austria,25668.0
+8,10,Sweden (SWE),2,1,0,3,1994,Winter,Sweden,25647.0
+9,1,United States (USA)*,44,32,25,101,1996,Summer,United States,30047.0
+10,2,Russia (RUS),26,21,16,63,1996,Summer,Russia,2843.0
+11,3,Germany (GER),20,18,27,65,1996,Summer,Germany,30745.0
+12,4,China (CHN),16,22,12,50,1996,Summer,China,709.0
+13,5,France (FRA),15,7,15,37,1996,Summer,France,27871.0
+14,6,Italy (ITA),13,10,12,35,1996,Summer,Italy,23033.0
+15,7,Australia (AUS),9,9,23,41,1996,Summer,Australia,23218.0
+16,9,Ukraine (UKR),9,2,12,23,1996,Summer,Ukraine,914.0
+17,1,Germany (GER),12,9,8,29,1998,Winter,Germany,27582.0
+18,2,Norway (NOR),10,10,5,25,1998,Winter,Norway,34721.0
+19,3,Russia (RUS),9,6,3,18,1998,Winter,Russia,1976.0
+20,4,Canada (CAN),6,5,4,15,1998,Winter,Canada,20975.0
+21,5,United States (USA),6,3,4,13,1998,Winter,United States,32929.0
+22,6,Netherlands (NED),5,4,2,11,1998,Winter,Netherlands,27573.0
+23,7,Japan (JPN)*,5,1,4,10,1998,Winter,Japan,31931.0
+24,8,Austria (AUT),3,5,9,17,1998,Winter,Austria,27329.0
+25,10,Italy (ITA),2,6,2,10,1998,Winter,Italy,22284.0
+26,1,United States (USA),37,24,32,93,2000,Summer,United States,36433.0
+27,2,Russia (RUS),32,28,29,89,2000,Summer,Russia,1906.0
+28,3,China (CHN),28,16,14,58,2000,Summer,China,959.0
+29,4,Australia (AUS)*,16,25,17,58,2000,Summer,Australia,20860.0
+30,5,Germany (GER),13,17,26,56,2000,Summer,Germany,24009.0
+31,6,France (FRA),13,14,11,38,2000,Summer,France,23318.0
+32,7,Italy (ITA),13,8,13,34,2000,Summer,Italy,20117.0
+33,8,Netherlands (NED),12,9,4,25,2000,Summer,Netherlands,25996.0
+34,1,Norway (NOR),13,5,7,25,2002,Winter,Norway,42975.0
+35,2,Germany (GER),12,16,8,36,2002,Winter,Germany,25577.0
+36,3,United States (USA)*,10,13,11,34,2002,Winter,United States,38114.0
+37,4,Canada (CAN),7,3,7,17,2002,Winter,Canada,24210.0
+38,5,Russia (RUS),5,4,4,13,2002,Winter,Russia,2557.0
+39,6,France (FRA),4,5,2,11,2002,Winter,France,25226.0
+40,7,Italy (ITA),4,4,5,13,2002,Winter,Italy,22299.0
+41,8,Finland (FIN),4,2,1,7,2002,Winter,Finland,26959.0
+42,9,Netherlands (NED),3,5,0,8,2002,Winter,Netherlands,28919.0
+43,10,Austria (AUT),3,4,10,17,2002,Winter,Austria,26444.0
+44,1,United States (USA),36,39,26,101,2004,Summer,United States,41838.0
+45,2,China (CHN),32,17,14,63,2004,Summer,China,1513.0
+46,3,Russia (RUS),28,26,36,90,2004,Summer,Russia,4408.0
+47,4,Australia (AUS),17,16,17,50,2004,Summer,Australia,32796.0
+48,5,Japan (JPN),16,9,12,37,2004,Summer,Japan,37701.0
+49,6,Germany (GER),13,16,20,49,2004,Summer,Germany,34658.0
+50,7,France (FRA),11,9,13,33,2004,Summer,France,35154.0
+51,8,Italy (ITA),10,11,11,32,2004,Summer,Italy,31250.0
+52,1,Germany (GER),11,12,6,29,2006,Winter,Germany,37020.0
+53,2,United States (USA),9,9,7,25,2006,Winter,United States,46352.0
+54,3,Austria (AUT),9,7,7,23,2006,Winter,Austria,40470.0
+55,4,Russia (RUS),8,6,8,22,2006,Winter,Russia,7420.0
+56,5,Canada (CAN),7,10,7,24,2006,Winter,Canada,40442.0
+57,6,Sweden (SWE),7,2,5,14,2006,Winter,Sweden,46089.0
+58,8,Switzerland (SUI),5,4,5,14,2006,Winter,Switzerland,57799.0
+59,9,Italy (ITA)*,5,0,6,11,2006,Winter,Italy,33341.0
+60,10,France (FRA),3,2,4,9,2006,Winter,France,37900.0
+61,1,China (CHN)*‡,48,22,30,100,2008,Summer,China,3467.0
+62,2,United States (USA)‡,36,39,37,112,2008,Summer,United States,48302.0
+63,3,Russia (RUS)‡,24,13,23,60,2008,Summer,Russia,12468.0
+64,5,Germany (GER)‡,16,11,14,41,2008,Summer,Germany,46681.0
+65,6,Australia (AUS),14,15,17,46,2008,Summer,Australia,49224.0
+66,8,Japan (JPN)‡,9,7,9,25,2008,Summer,Japan,39454.0
+67,9,Italy (ITA)‡,8,9,10,27,2008,Summer,Italy,40689.0
+68,10,France (FRA)‡,7,16,20,43,2008,Summer,France,47273.0
+69,1,Canada (CAN)*,14,7,5,26,2010,Winter,Canada,47513.0
+70,2,Germany (GER),10,13,7,30,2010,Winter,Germany,42642.0
+71,3,United States (USA),9,15,13,37,2010,Winter,United States,48310.0
+72,4,Norway (NOR),9,8,6,23,2010,Winter,Norway,87309.0
+73,6,Switzerland (SUI),6,0,3,9,2010,Winter,Switzerland,74908.0
+74,7,China (CHN),5,2,4,11,2010,Winter,China,4524.0
+75,8,Sweden (SWE),5,2,4,11,2010,Winter,Sweden,51869.0
+76,9,Austria (AUT),4,6,6,16,2010,Winter,Austria,46757.0
+77,10,Netherlands (NED),4,1,3,8,2010,Winter,Netherlands,50433.0
+78,1,United States (USA)‡,46,28,29,103,2012,Summer,United States,51403.0
+79,2,China (CHN)‡,38,31,22,91,2012,Summer,China,6329.0
+80,4,Russia (RUS)‡,20,19,30,69,2012,Summer,Russia,15425.0
+81,6,Germany (GER)‡,11,20,13,44,2012,Summer,Germany,44090.0
+82,7,France (FRA)‡,11,11,13,35,2012,Summer,France,42333.0
+83,8,Australia (AUS)‡,8,15,12,35,2012,Summer,Australia,68048.0
+84,9,Italy (ITA),8,9,11,28,2012,Summer,Italy,34470.0
+85,10,Hungary (HUN)‡,8,4,6,18,2012,Summer,Hungary,12804.0
+86,1,Russia (RUS),11,9,9,29,2014,Winter,Russia,14388.0
+87,2,Norway (NOR),11,5,10,26,2014,Winter,Norway,96644.0
+88,3,Canada (CAN),10,10,5,25,2014,Winter,Canada,50510.0
+89,4,United States (USA),9,7,12,28,2014,Winter,United States,54668.0
+90,5,Netherlands (NED),8,7,9,24,2014,Winter,Netherlands,52240.0
+91,6,Germany (GER),8,6,5,19,2014,Winter,Germany,48116.0
+92,7,Switzerland (SUI),6,3,2,11,2014,Winter,Switzerland,87133.0
+93,8,Belarus (BLR),5,0,1,6,2014,Winter,Belarus,8316.0
+94,9,Austria (AUT),4,8,5,17,2014,Winter,Austria,51390.0
+95,10,France (FRA),4,4,7,15,2014,Winter,France,44572.0
+96,1,United States (USA),46,37,38,121,2016,Summer,United States,57608.0
+97,3,China (CHN),26,18,26,70,2016,Summer,China,8123.0
+98,4,Russia (RUS),19,17,19,55,2016,Summer,Russia,8946.0
+99,5,Germany (GER),17,10,15,42,2016,Summer,Germany,42177.0
+100,6,Japan (JPN),12,8,21,41,2016,Summer,Japan,38883.0
+101,7,France (FRA),10,18,14,42,2016,Summer,France,38178.0
+102,9,Italy (ITA),8,12,8,28,2016,Summer,Italy,30507.0
+103,10,Australia (AUS),8,11,10,29,2016,Summer,Australia,51737.0
+104,1,Norway (NOR),14,14,11,39,2018,Winter,Norway,75341.0
+105,2,Germany (GER),14,10,7,31,2018,Winter,Germany,47535.0
+106,3,Canada (CAN),11,8,10,29,2018,Winter,Canada,47658.0
+107,4,United States (USA),9,8,6,23,2018,Winter,United States,61687.0
+108,5,Netherlands (NED),8,6,6,20,2018,Winter,Netherlands,52016.0
+109,6,Sweden (SWE),7,6,1,14,2018,Winter,Sweden,57783.0
+110,8,Switzerland (SUI),5,6,4,15,2018,Winter,Switzerland,83264.0
+111,9,France (FRA),5,4,6,15,2018,Winter,France,42419.0
+112,10,Austria (AUT),5,3,6,14,2018,Winter,Austria,49796.0
