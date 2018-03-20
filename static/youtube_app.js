@@ -30,4 +30,4 @@ var layout = {
     }
   }
 };
-Plotly.newPlot('myDiv', data, layout);
+Plotly.newPlot('YoutubeDiv', data, layout);

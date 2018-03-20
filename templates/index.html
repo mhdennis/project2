@@ -18,7 +18,7 @@
                 <img id="flag1" src="static/900px-Olympic_flag.svg.png" alt="Olympic_flag">
             </div>
             <div  id="title" class = "col-xs-4 col-md-4 col-md-offset-0">
-                <h1> The Olympics: A Birdseye view of the Olympics 1994-2018 </h1> <!-- working title... -->
+                <h1> A Birdseye view of the Olympics: 1994-2018 </h1> <!-- working title... -->
                 <p> By Safaa Amer, Maya Dennis, Christa Fields, and Kevin Yao</p>
                 <br>
             </div>
@@ -44,6 +44,7 @@
                 </a>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="/olympics_gdp_data">Medal and GDP API</a>
+                    <a class="dropdown-item" href="/youtube_data">YouTube Viewership Data</a>
                     <a class="dropdown-item" href="/viewers_data">Viewers and Rights Fees</a>
                     <a class="dropdown-item" href="/nyt_articles">New York Times API</a>
                     <a class="dropdown-item" href="/guardian_articles">The Guardian API</a>
@@ -61,16 +62,25 @@
         </div> <!-- end row -->
 
         <div id="dataRow1" class="row"> 
-            <div id="OlympicMedalStats" class = "col-xs-4 col-md-4 col-md-offset-0">
-                <!-- olympic medal stats table here -->
-            </div>
-
-            <div id="worldMap" class = "col-xs-8 col-md-8 col-md-offset-0">
+            <div id="worldMap" class = "col-xs-12 col-md-12 col-md-offset-0">
                 <!-- world map data here --> 
+                <iframe width="100%" height="520" frameborder="0" 
+                    src="https://mhdennis.carto.com/builder/92a5fe8a-b306-400a-824f-dbffffa0adfd/embed" 
+                    allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen>
+                </iframe>
             </div>
-
+        </div> <!-- end row -->
+        <div id="dataRow1.5" class="row">
+            <div id="OlympicMedalGraph" class = "col-xs-6 col-md-6 col-md-offset-0">
+                <!-- olympic medal graph here -->
+                <img src="static/GDP.png">
+            </div>
+            <div id="YoutubeDiv" class="col-xs-6 col-md-6 col-md-offset-0">
+                <!--Youtube viewership data here-->
+            </div>
         </div> <!-- end row -->
 
+        </div>
         <div id="dataRow2" class="row"> 
             <div class= "col-xs-12 col-md-12 col-md-offset-0">
                 <!-- news_api chart section-->
@@ -111,6 +121,8 @@
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <!-- Plotly.js CDN library -->
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- Maya's youtube viewership javascript -->
+    <script src="{{ url_for('static',filename='youtube_app.js')}}" type="text/javascript"></script>
     <!-- Kevin's javascript --> 
     <script src="{{ url_for('static',filename='news_api_and_google.js')}}" type="text/javascript"></script>
     <!-- Christa's chart.js -->
