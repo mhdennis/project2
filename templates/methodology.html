@@ -1,0 +1,140 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Olympics Dashboard</title>  <!-- working title... -->
+    <!-- bootstrap 4 stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- chart.js  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js"></script>
+    <!-- This html file's stylesheet -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='index_style.css')}}"> 
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css')}}">
+</head>
+  <body>
+    <div class="container-fluid">
+        <div id="Header" class="row">
+            <div class = "col-xs-4 col-md-4 col-md-offset-0"> <!-- padding--> 
+                <img id="flag1" src="static/900px-Olympic_flag.svg.png" alt="Olympic_flag">
+            </div>
+            <div  id="title" class = "col-xs-4 col-md-4 col-md-offset-0">
+                <h1> A Birdseye view of the Olympics: 1994-2018 </h1> <!-- working title... -->
+                <p> By Safaa Amer, Maya Dennis, Christa Fields, and Kevin Yao</p>
+                <br>
+            </div>
+            <div class = "col-xs-4 col-md-4 col-md-offset-0"> <!-- padding--> 
+                <img id="flag2" src="static/900px-Olympic_flag.svg.png" alt="Olympic_flag">
+            </div>
+        </div> <!-- end row -->
+
+        <!-- Navbar: Grey with black text -->
+        <nav class="navbar navbar-expand-sm bg-light navbar-light">
+            <a class="nav-brand" href="/">Home</a>
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/methodology">Methodology</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"></a>
+            </li>
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Data API
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/olympics_gdp_data">Medal and GDP API</a>
+                    <a class="dropdown-item" href="/youtube_data">YouTube Viewership Data</a>
+                    <a class="dropdown-item" href="/viewers_data">Viewers and Rights Fees</a>
+                    <a class="dropdown-item" href="/nyt_articles">New York Times API</a>
+                    <a class="dropdown-item" href="/guardian_articles">The Guardian API</a>
+                    <a class="dropdown-item" href="/google_trends">Google Trends</a>
+                </div>  
+            </li>
+            </ul>
+        </nav>
+        <hr>
+        
+        <div id="page_description" class="row"> 
+            <div class = "col-xs-12 col-md-12 col-md-offset-0">
+                <!-- page_description here! -->
+                <h1> Methodology </h1>
+                <br>
+                <!-- Maya -->
+                <h3> Medal Ranking Map </h3>
+                <br>
+                <p>
+                    Methodology: 
+                    Connected the OlympicsGDP CSV data set to Carto Map. 
+                    Then geocoded the map by country and added widgets for year and rank. 
+                    We used 10 bins for rank to show the top 10 ranked countries for each Olympics year. 
+                    With the Carto functionality, we have the ability to select a year at a time to show the 
+                    ranking for a country in the top 10. In any particular year we can see a country’s ranking, 
+                    total medals won, and weather the Olympic year was winter or summer.
+                    <br>
+                    Sources: Carto, Olympics GDP.csv
+                </p>
+                <h3> YouTube Viewership </h3>
+                <p>
+                    Methodology:
+                    Used the YouTube API to pull data from the YouTube “Olympic” Channel. Then used Pandas to clean the data and determine view count by year. Created the bar chart using plot.ly to show the views of this particular YouTube channel by year. The purpose of this was to see which Olympic season has higher viewership.
+                    <br> 
+                    Sources: 
+                    Youtube API
+                </p>
+                <hr>
+                <!-- Safaa -->
+                <h3> Olympics Medal and GDP  Data </h3>
+                <p> a. Data Extraction <br>
+                    Explored several data sources for Olympics Medal data since 1994 when the Olympics 
+                    started alternating between Winter and Summer. Most data sources were not consistent. 
+                    Decided to use Wikipedia pages for extracting consistent annual data. 
+                    Investigated data sources for GDP and poverty for the Olympics years and countries. 
+                    The World Bank data had a lot of scattered missing values. Wikipedia was used for consistency 
+                    purposes and data completeness. 
+                    <br>
+                    b. Data management
+                    Data management was done mostly in Pandas for Olympics Medal data and using VBA scripting for 
+                    GDP data to restructure it. Challenges faced in data management for inconsistent website contents, 
+                    table structure, and merged cells in tables. Data was then merged into one database used for all 
+                    relevant visualizations. Data was filtered to keep bi-annual records for the top 10 countries with
+                        the relevant medal and GDP information.
+                    <br>
+                    c. Analysis and Visualization
+                    A scatterplot for the relationship between rank and GDP combined with a correlation reflected no 
+                    significant linear relationship between the country GDP and its ranking in the Olympics or the number
+                        of medals received.
+                </p>
+
+                <!-- Kevin -->
+                
+                <!-- Christa -->
+                <h3> Viewership </h3>
+                <p>
+                    <strong>Methodology</strong> 
+                    Pulled the CSV files for the Olympics Viewership and Domestic Rights fees.  Then used Chart.Js, a JavaScript charting library, to create a mixed chart type.  The interactive bar graph plots the Olympic viewership in millions for the Summer and Winter games.  The line graphic plots the Olympics domestic rights fees in millions.
+                    <br>
+                    <strong>Sources</strong> 
+                    Analysis of the Average Olympic Viewership data from NBC, and can be accessed here.  Winter Olympics includes primetime competition as well as opening closing ceremonies, while the summer viewership is only for prime time competition. Average Olympic domestic rights fees data from S&P Global Market Intelligence.
+                    <br>
+                    Links: 
+                    <br>
+                    https://www.recode.net/2018/2/9/16975680/olympics-winter-2018-viewership-down-nbc-rights-pyeongchang
+                    <br>
+                    http://www.chartjs.org/
+                    
+                    
+                </p>
+
+            </div>
+        </div> <!-- end row -->
+
+         <hr>
+    </div> <!-- ends container -->
+    
+    <!-- script for bootstrap 4 -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -66,7 +66,7 @@ def index():
 # Flask route: Methodology html page
 @app.route("/methodology")
 def meth():
-    return render_template("page_template.html")
+    return render_template("methodology.html")
 
 
 # In[ ]:
