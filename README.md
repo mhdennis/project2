@@ -5,7 +5,7 @@ https://olympicsproject.herokuapp.com/
 
 ## Theme: The Olympics!
 
-![Carto Map](Carto Map.png)
+![Carto Map](Carto&#32;Map.png)
 
 Goals:
 - Shed a  different light on the Olympics data 
