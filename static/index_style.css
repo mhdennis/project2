@@ -22,3 +22,12 @@
     padding-right: 60px;
 
 }
+
+/* viewership chart size restyling */
+#chart {
+    margin-left:20%;
+}
+#bar-chart {
+    max-height: 450px;
+    max-width: 800px;
+}
