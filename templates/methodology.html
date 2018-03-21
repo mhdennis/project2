@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Olympics Dashboard</title>  <!-- working title... -->
+    <title>Methodology</title>  <!-- working title... -->
     <!-- bootstrap 4 stylesheet -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- chart.js  -->
@@ -58,8 +58,8 @@
                 <h1> Methodology </h1>
                 <br>
                 <!-- Maya -->
-                <h3> Medal Ranking Map </h3>
-                <br>
+                <h3> Maya:
+                <h5> Medal Ranking Map </h5>
                 <p>
                     Methodology: 
                     Connected the OlympicsGDP CSV data set to Carto Map. 
@@ -71,7 +71,7 @@
                     <br>
                     Sources: Carto, Olympics GDP.csv
                 </p>
-                <h3> YouTube Viewership </h3>
+                <h5> YouTube Viewership </h5>
                 <p>
                     Methodology:
                     Used the YouTube API to pull data from the YouTube “Olympic” Channel. 
@@ -82,42 +82,71 @@
                     Sources: 
                     Youtube API
                 </p>
-                <hr>
+                <br>
                 <!-- Safaa -->
-                <h3> Olympics Medal and GDP  Data </h3>
+                <h3> Safaa: <h3>
+                <h5> Olympics Medal and GDP  Data </h5>
                 <p> a. Data Extraction <br>
                     Explored several data sources for Olympics Medal data since 1994 when the Olympics 
                     started alternating between Winter and Summer. Most data sources were not consistent. 
                     Decided to use Wikipedia pages for extracting consistent annual data. 
+                    <br><br>
                     Investigated data sources for GDP and poverty for the Olympics years and countries. 
                     The World Bank data had a lot of scattered missing values. Wikipedia was used for consistency 
                     purposes and data completeness. 
-                    <br>
-                    b. Data management
+                    <br><br>
+                    b. Data management <br>
                     Data management was done mostly in Pandas for Olympics Medal data and using VBA scripting for 
                     GDP data to restructure it. Challenges faced in data management for inconsistent website contents, 
                     table structure, and merged cells in tables. Data was then merged into one database used for all 
                     relevant visualizations. Data was filtered to keep bi-annual records for the top 10 countries with
                         the relevant medal and GDP information.
-                    <br>
-                    c. Analysis and Visualization
+                    <br><br>
+                    c. Analysis and Visualization <br>
                     A scatterplot for the relationship between rank and GDP combined with a correlation reflected no 
                     significant linear relationship between the country GDP and its ranking in the Olympics or the number
                         of medals received.
                 </p>
-
+                <br>
                 <!-- Kevin -->
-                
-                <!-- Christa -->
-                <h3> Viewership </h3>
+                <h3> Kevin: <h3>
+                <h5> News API and Google Trends Data </h5>
+                <p> 
+                    &emsp; To examine the popularity of the Olympics, I decided to look at mainstream news sources as well as 
+                    worldwide Google searches. I was able to use the New York Times API and the Guardian API to extract metadata, 
+                    namely the number of articles in the results that appear when I search the word “olympics” from the dates 
+                    “1/01” to “12/31” of a given year. I used python’s requests library to accomplish this. Since NBC has exclusive 
+                    broadcasting rights for the Olympics in the US, I tried to use their API but could not find a reliable one that 
+                    contained data from more than a year ago. I obtained the Google search data for the search term “Olympics” directly 
+                    from Google Trends. The Google Trends values are relative to the highest point on the chart, with a value of 100 as 
+                    the peak popularity for the time period. 
+                    <br>
+                    &emsp; I saved the Google Trends data and the metadata from the news api first to 
+                    a pandas dataframe, then to a csv file. From there I added the csv files to a SQLite database and used the Plotly.js 
+                    JavaScript library to make interactive plots from queries to the SQLite database. Looking at the graphs, 
+                    it seems clear that there is a consistent preference for the Summer Olympics over the Winter Olympics.
+                </p>
+                <h5> HTML pages and the Python Flask app </h5> 
                 <p>
-                    <strong>Methodology</strong> 
+                    &emsp; I used the grid system and the navbar from Bootstrap 4 to create a page template that I could easily add to. 
+                    I first used Jupyter Notebook to create a Flask web framework app then exported it to a Python file for deployment. 
+                    I decided to create Flask routes containing the JSON version of our data in case other developers wanted a way to interact 
+                    with the data we used for our graphs. I used the D3.js JavaScript library to access the csv files and the jsonify function in 
+                    Flask to convert the csv files to JSON format. D3 was also used to read in the data from the Flask routes for the news API and 
+                    Google Trends graphs. Finally, I deployed the project through the Heroku cloud platform. 
+                </p>
+                <br> 
+                <!-- Christa -->
+                <h3> Christa: <h3>
+                <h5> Viewership </h5>
+                <p>
+                    <strong>Methodology</strong> <br>
                     Pulled the CSV files for the Olympics Viewership and Domestic Rights fees.
                      Then used Chart.Js, a JavaScript charting library, to create a mixed chart type.  
                      The interactive bar graph plots the Olympic viewership in millions for the Summer and Winter games.  
                      The line graphic plots the Olympics domestic rights fees in millions.
                     <br>
-                    <strong>Sources</strong> 
+                    <strong>Sources</strong> <br>
                     Analysis of the Average Olympic Viewership data from NBC, and can be accessed here. 
                     Winter Olympics includes primetime competition as well as opening closing ceremonies, 
                     while the summer viewership is only for prime time competition. Average Olympic domestic 
